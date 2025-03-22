@@ -14,7 +14,9 @@ const Header = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!token) return;
+        if (!token) {
+            return;
+        }
 
         const fetchReminders = async () => {
             try {
